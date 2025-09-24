@@ -5,7 +5,7 @@
 #include "stdbool.h"
 #include "ctype.h"
 
-bool  isnbr(char *str);	  // Verify that a string is a number.
+bool  isnbr(char *str);	  // Проверка строки.
 
 int main(int argc, char **argv)
 {
@@ -18,7 +18,7 @@ int main(int argc, char **argv)
   if (check)
   {
 	if (strlen(argv[1]) > 9)
-	  printf("Please enter a shorter number");
+	  printf("Пожалуйста введите число меньшей длины");
 	else 
 	{
 	  index = atoi(argv[1]);
@@ -28,8 +28,8 @@ int main(int argc, char **argv)
   }
   else
   {
-	printf("Help: please enter the required number of letters.\n");
-	printf("Example: %s <integer number>", argv[0]);
+	printf("Справка: необходимо указать количество букв.\n");
+	printf("Пример: %s <целое число>", argv[0]);
   }
   printf("\n");
   return (0);
